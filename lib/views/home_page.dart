@@ -23,7 +23,9 @@ class _HomePageState extends State<HomePage> {
   void _resetPlayer({Player player, bool resetVictories = true}) {
     setState(() {
       player.score = 0;
-      if (resetVictories) player.victories = 0;
+      if (resetVictories == false){
+        player.victories = 0;
+        };
     });
   }
 
